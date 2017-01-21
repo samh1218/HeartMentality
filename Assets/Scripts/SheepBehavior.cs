@@ -26,11 +26,13 @@ public class SheepBehavior : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D other)
     {
+        //If we hit a wave, push the sheep
         Wave wave = other.gameObject.GetComponent<Wave>();
         if (wave != null)
         {
             Vector3 pushDirection = transform.position - wave.transform.position;
             transform.position = wave.transform.position + pushDirection.normalized * (float)(wave.circleCollider.radius);
+            direction = Vector3.Lerp(direction, pushDirection, Time.deltaTime/2);
         }
     }
 
