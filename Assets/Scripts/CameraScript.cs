@@ -55,6 +55,17 @@ public class CameraScript : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
+        //Spawn waves on click
+        if(Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Vector3 point = ray.origin + (ray.direction * 10);
+            point.z = 0;
+            GameObject obj = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/" + "wave"));
+            obj.transform.position = point;
+        }
+
+        //Move the camera around the level bounds
         Vector3 position = transform.position;
         if (Input.mousePosition.x > Screen.width - Boundary)
         {
