@@ -2,11 +2,9 @@
 using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class SheepBehavior : MonoBehaviour {
+public class SheepBehavior : ActorBehavior {
 
     private BoxCollider2D boxCollider;
-
-    public Vector3 direction = new Vector3(0,1,0);
     public static int baseSpeed = 10;
 
 	// Use this for initialization
@@ -59,5 +57,10 @@ public class SheepBehavior : MonoBehaviour {
         position = position + direction * (baseSpeed*Time.deltaTime);
         transform.position = position;
 
+    }
+
+    public override void SpawnActor(string actorFileName, Vector3 moveDirection, Vector3 location)
+    {
+        base.SpawnActor(actorFileName, moveDirection, location);
     }
 }
