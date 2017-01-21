@@ -21,6 +21,7 @@ public class SheepBehavior : MonoBehaviour {
         {
             Destroy(this.gameObject);
         }
+
     }
 
     // Update is called once per frame
