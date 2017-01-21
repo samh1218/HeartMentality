@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CircleCollider2D))]
 public class Wave : MonoBehaviour {
 
-    private CircleCollider2D circleCollider;
+    public CircleCollider2D circleCollider;
     private ParticleSystem pSystem;
 
     public int expandSpeed = 80;

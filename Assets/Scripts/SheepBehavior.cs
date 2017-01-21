@@ -24,6 +24,16 @@ public class SheepBehavior : MonoBehaviour {
 
     }
 
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        Wave wave = other.gameObject.GetComponent<Wave>();
+        if (wave != null)
+        {
+            Vector3 pushDirection = transform.position - wave.transform.position;
+            transform.position = wave.transform.position + pushDirection.normalized * (float)(wave.circleCollider.radius);
+        }
+    }
+
     // Update is called once per frame
     void Update () {
         
