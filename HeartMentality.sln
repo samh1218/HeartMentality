@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeartMentality", "HeartMentality.csproj", "{C534B89B-C764-A58B-4598-E37F8EFE6FD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeartMentality.Editor", "HeartMentality.Editor.csproj", "{0138CA6C-0259-3BEE-2114-5220C33CD65B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C534B89B-C764-A58B-4598-E37F8EFE6FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C534B89B-C764-A58B-4598-E37F8EFE6FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C534B89B-C764-A58B-4598-E37F8EFE6FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C534B89B-C764-A58B-4598-E37F8EFE6FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0138CA6C-0259-3BEE-2114-5220C33CD65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0138CA6C-0259-3BEE-2114-5220C33CD65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0138CA6C-0259-3BEE-2114-5220C33CD65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0138CA6C-0259-3BEE-2114-5220C33CD65B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
