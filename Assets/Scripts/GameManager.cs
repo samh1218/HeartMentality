@@ -4,7 +4,7 @@ using Tiled2Unity;
 
 public class GameManager : MonoBehaviour {
 
-    private string startLevel = "test";
+    private string startLevel = "testWater";
     public static TiledMap map = null;
 
     void Awake()
@@ -30,4 +30,6 @@ public class GameManager : MonoBehaviour {
         GameObject obj = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/" + filename));
         map = obj.GetComponent<TiledMap>();
     }
+
+   
 }
