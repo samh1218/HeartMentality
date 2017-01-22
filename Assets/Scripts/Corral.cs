@@ -5,6 +5,7 @@ using UnityEngine;
 public class Corral : MonoBehaviour {
 
     public int SheepCount = 0;
+    private LevelManager lm = new LevelManager();
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,7 @@ public class Corral : MonoBehaviour {
         {
             Destroy(collision.gameObject);
             SheepCount++;
+            UI.sheepSavedCounter = SheepCount;
         }
     }
 }
