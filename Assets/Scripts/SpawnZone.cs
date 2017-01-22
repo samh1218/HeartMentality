@@ -6,8 +6,6 @@ public class SpawnZone : ActorBehavior {
 
     public List<GameObject> spawnObjectsList = new List<GameObject>();
 
-    public Vector3 location;
-
     // Use this for initialization
     void Start()
     {
@@ -17,7 +15,7 @@ public class SpawnZone : ActorBehavior {
             ActorBehavior script = obj ? obj.GetComponent<ActorBehavior>() : null;
             if (script != null)
             {
-                Vector3 SpawnLocation = randomizeVector(location, 0, 10, true, i);
+                Vector3 SpawnLocation = randomizeVector(transform.position, 0, 10, true, i);
                 Vector3 SpawnDirection = randomizeVector(direction, 0, 0.2f, true, i);
                 script.SpawnActor(obj.name, SpawnDirection, SpawnLocation);
             }
