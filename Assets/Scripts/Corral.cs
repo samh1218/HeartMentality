@@ -22,6 +22,7 @@ public class Corral : MonoBehaviour {
         {
             Destroy(collision.gameObject);
             SheepCount++;
+            Debug.Log(SheepCount.ToString());
         }
     }
 }

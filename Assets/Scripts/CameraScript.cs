@@ -25,11 +25,11 @@ public class CameraScript : MonoBehaviour {
     private float maxX
     {
         //get { return (float)(GameManager.map.MapWidthInPixels - horzExtent / 2.0); }
-        get { return (float)(GameManager.map.MapWidthInPixels - horzExtent); }
+        get { return (float)(GameManager.currentMap.MapWidthInPixels - horzExtent); }
     }
     private float minY
     {
-        get { return (float)(-GameManager.map.MapHeightInPixels - vertExtent); }
+        get { return (float)(-GameManager.currentMap.MapHeightInPixels - vertExtent); }
         //get { return (float)(vertExtent / 2.0); }
     }
     private float maxY
@@ -93,15 +93,15 @@ public class CameraScript : MonoBehaviour {
     void LateUpdate()
     {
         var v3 = transform.position;
-        if (horzExtent < GameManager.map.MapWidthInPixels)
+        if (horzExtent < GameManager.currentMap.MapWidthInPixels)
             v3.x = Mathf.Clamp(v3.x, minX, maxX);
         else
-            v3.x = GameManager.map.MapWidthInPixels / 2;
+            v3.x = GameManager.currentMap.MapWidthInPixels / 2;
 
-        if (vertExtent < GameManager.map.MapHeightInPixels)
+        if (vertExtent < GameManager.currentMap.MapHeightInPixels)
             v3.y = Mathf.Clamp(v3.y, minY, maxY);
         else
-            v3.x = GameManager.map.MapHeightInPixels / 2;
+            v3.x = GameManager.currentMap.MapHeightInPixels / 2;
 
         transform.position = v3;
     }

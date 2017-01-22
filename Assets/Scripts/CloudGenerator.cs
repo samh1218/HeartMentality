@@ -37,4 +37,11 @@ public class CloudGenerator : MonoBehaviour {
 
         }
 	}
+    private void OnDestroy()
+    {
+        foreach(GameObject cld in Clouds)
+        {
+            Destroy(cld);
+        }
+    }
 }

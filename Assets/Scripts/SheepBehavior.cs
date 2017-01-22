@@ -16,11 +16,13 @@ public class SheepBehavior : ActorBehavior {
 
     public void Explode()
     {
+        GameManager.numOfSheepDestroyed++;
         Destroy(this.gameObject);
     }
 
     public void FallToDeath()
     {
+        GameManager.numOfSheepDestroyed++;
         Destroy(this.gameObject);
     }
 
