@@ -30,4 +30,6 @@ public class GameManager : MonoBehaviour {
         GameObject obj = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/" + filename));
         map = obj.GetComponent<TiledMap>();
     }
+
+   
 }
