@@ -22,13 +22,13 @@ public class CloudGenerator : MonoBehaviour {
             int index = Random.Range(0, CloudPrefabs.Count);
             GameObject cloud = (GameObject)GameObject.Instantiate(CloudPrefabs[index]);
             int location = Random.Range(0, map.MapHeightInPixels - 1);
-            cloud.transform.position = new Vector3(0, location*-1, 0);
+            cloud.transform.position = new Vector3(transform.position.x, location*-1 + transform.position.y, 0);
             Clouds.Add(cloud);
         }
 
         foreach(GameObject cld in Clouds)
         {
-            if(cld.transform.position.x > map.MapWidthInPixels)
+            if(cld.transform.position.x > map.MapWidthInPixels + transform.position.x)
             {
                 GameObject removeCloud = cld;
                 Clouds.Remove(cld);
