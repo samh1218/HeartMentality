@@ -8,11 +8,14 @@ public class SheepBehavior : ActorBehavior {
     public static int baseSpeed = 10;
     public Vector3 BonusDirection = Vector3.zero;
     public int BonusSpeed = 0;
+    private Animator animator;
 
 	// Use this for initialization
 	void Start () {
         boxCollider = GetComponent<BoxCollider2D>();
-	}
+        animator = GetComponent<Animator>();
+
+    }
 
     public void Explode()
     {
@@ -58,6 +61,12 @@ public class SheepBehavior : ActorBehavior {
         Vector3 position = transform.position;
         position = position + direction * (baseSpeed*Time.deltaTime) + BonusDirection*(BonusSpeed*Time.deltaTime);
         transform.position = position;
+
+        Vector3 velocity = direction * (baseSpeed * Time.deltaTime) + BonusDirection * (BonusSpeed * Time.deltaTime);
+        velocity = velocity.normalized;
+        animator.SetFloat("VelocityX", velocity.x);
+
+        animator.SetFloat("VelocityY", velocity.y);
 
     }
 
