@@ -101,6 +101,10 @@
     <None Include="Assets\Tiled2Unity\Imported\Level 1.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\Level 2.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\Level 3.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\Level 4.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\Level 5.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\Level 6.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\Level 7.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Imported\test.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\testblah.tiled2unity.xml" />
