@@ -10,8 +10,8 @@ public class CameraScript : MonoBehaviour {
         horzExtent = vertExtent * Screen.width / Screen.height;
     }
 
-    private int Boundary  = 50;
-    private int speed  = 200;
+    private int Boundary  = 75;
+    private int speed  = 400;
     
 
     Camera camera;
