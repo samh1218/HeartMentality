@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\SheepBehavior.cs" />
     <Compile Include="Assets\Scripts\Shockwave.cs" />
     <Compile Include="Assets\Scripts\SpawnZone.cs" />
+    <Compile Include="Assets\Scripts\UI.cs" />
     <Compile Include="Assets\Scripts\WaterZone.cs" />
     <Compile Include="Assets\Scripts\Wave.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\ImportBehaviour.cs" />
