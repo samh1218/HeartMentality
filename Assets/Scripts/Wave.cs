@@ -25,8 +25,7 @@ public class Wave : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         circleCollider.radius += Time.deltaTime * expandSpeed;
-
-        if(pSystem)
+        if (pSystem)
         {
             if (!pSystem.IsAlive())
             {
