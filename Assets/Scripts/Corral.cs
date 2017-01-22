@@ -16,13 +16,17 @@ public class Corral : MonoBehaviour {
 		
 	}
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.GetComponent<SheepBehavior>() != null)
         {
             Destroy(collision.gameObject);
             SheepCount++;
+<<<<<<< HEAD
             Debug.Log(SheepCount.ToString());
+=======
+            UI.sheepSavedCounter = SheepCount;
+>>>>>>> 2bafa5a068d5204607ca462fd1b02a890aa68636
         }
     }
 }
