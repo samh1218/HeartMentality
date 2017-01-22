@@ -6,6 +6,8 @@ public class SheepBehavior : ActorBehavior {
 
     private BoxCollider2D boxCollider;
     public static int baseSpeed = 10;
+    public Vector3 BonusDirection = Vector3.zero;
+    public int BonusSpeed = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -54,7 +56,7 @@ public class SheepBehavior : ActorBehavior {
     void Update () {
         
         Vector3 position = transform.position;
-        position = position + direction * (baseSpeed*Time.deltaTime);
+        position = position + direction * (baseSpeed*Time.deltaTime) + BonusDirection*(BonusSpeed*Time.deltaTime);
         transform.position = position;
 
     }

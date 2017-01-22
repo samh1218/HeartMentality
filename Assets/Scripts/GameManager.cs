@@ -4,7 +4,7 @@ using Tiled2Unity;
 
 public class GameManager : MonoBehaviour {
 
-    private string startLevel = "test";
+    private string startLevel = "testWater";
     public static TiledMap map = null;
 
     void Awake()
