@@ -89,6 +89,7 @@
     <None Include="Assets\Tiled2Unity\Imported\Level 3.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Imported\test.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\testblah.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\License.txt" />
     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
