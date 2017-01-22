@@ -15,7 +15,7 @@ public class UI : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         sheepSavedCounterDisplay = GetComponent<Text>();
-        sheepLostCounterDisplay = GetComponent<Text>();
+        //sheepLostCounterDisplay = GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
