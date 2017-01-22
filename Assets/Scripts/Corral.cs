@@ -5,7 +5,6 @@ using UnityEngine;
 public class Corral : MonoBehaviour {
 
     public int SheepCount = 0;
-    private LevelManager lm = new LevelManager();
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +16,7 @@ public class Corral : MonoBehaviour {
 		
 	}
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.GetComponent<SheepBehavior>() != null)
         {
