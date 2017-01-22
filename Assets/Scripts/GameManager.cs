@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-<<<<<<< HEAD
         // Copy Levels to Static List
         CopyLevels();
         if (levels.Capacity != 0)
@@ -38,16 +37,8 @@ public class GameManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-=======
-        LoadLevel(startLevel);
         listener = GetComponent<AudioListener>();
         source = GetComponent<AudioSource>();
-    }
-	
-	// Update is called once per frame
-	void Update () {
->>>>>>> 2bafa5a068d5204607ca462fd1b02a890aa68636
-	
 	}
 
     private void CopyLevels()

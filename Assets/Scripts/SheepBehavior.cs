@@ -25,12 +25,9 @@ public class SheepBehavior : ActorBehavior {
 
     public void FallToDeath()
     {
-<<<<<<< HEAD
         GameManager.numOfSheepDestroyed++;
-=======
         GameManager.source.clip = Resources.Load("Sound/WhenKilled/Mehh01") as AudioClip;
         GameManager.source.Play();
->>>>>>> 2bafa5a068d5204607ca462fd1b02a890aa68636
         Destroy(this.gameObject);
     }
 
